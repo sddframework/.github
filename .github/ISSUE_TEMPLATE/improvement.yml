@@ -1,0 +1,23 @@
+name: Focused improvement
+description: Propose a concrete improvement to this repository.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe a real workflow, example, or limitation.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the smallest useful change and how someone could verify it.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Existing approaches and alternatives
+      description: Link relevant tools or discussions and explain the remaining need.
