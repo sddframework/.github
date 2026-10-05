@@ -29,14 +29,15 @@ implementation, agree on the problem and scope with the maintainer in a thread.
 3. Update relevant documentation and describe the verification you performed.
 4. Open a pull request and link the relevant issue or discussion, if one exists.
 
-For the website, Node.js 22 or later is required. Run `pnpm check` and
-`pnpm build`, then preview and inspect any changed behavior or layout. Follow
-the website README for local development.
+For the website, Node.js 22 or later and npm are required. Run `npm run check`
+and `npm run build`, then preview and inspect any changed behavior or layout. Follow
+the [website README](https://github.com/sddframework/website/blob/main/README.md#local-development)
+for local development.
 
 ## Framework changes and checks
 
-Use the [getting-started guide](https://github.com/sddframework/sddfw/blob/feat/v0.1-playwright/docs/getting-started.md)
-to install the preview and the [architecture guide](https://github.com/sddframework/sddfw/blob/feat/v0.1-playwright/docs/architecture.md)
+Use the [getting-started guide](https://github.com/sddframework/sddfw/blob/main/docs/getting-started.md)
+to install the preview and the [architecture guide](https://github.com/sddframework/sddfw/blob/main/docs/architecture.md)
 to understand its invariants. Requires Node.js 22 or later. From a framework
 checkout, run:
 
@@ -62,11 +63,12 @@ Preserve these acceptance invariants:
 
 - Specifications require explicit review and approval; agents cannot approve.
 - Tests are prepared and checked against a baseline before implementation.
-- Implementation keeps the accepted tests frozen, including automatic repairs.
+- Implementation keeps the accepted tests, specification, approval, and configuration
+  frozen, including automatic repairs.
 - Missing, skipped, expected-failure, flaky, or blocked checks cannot disappear
   behind a passing acceptance summary.
 - Evidence identifies sources, configuration, environment, and declared mocks;
-  source or specification changes invalidate its freshness.
+  source, specification, approval, or configuration changes invalidate its freshness.
 - Initialization preserves existing project configuration, tests, and agent
   instructions.
 
@@ -76,15 +78,16 @@ useful evidence. Do not relax a requirement or assertion to make a check pass.
 Record any deliberately changed behavior in its specification and explain the
 change in the pull request.
 
-The [fullstack example](https://github.com/sddframework/sddfw/blob/feat/v0.1-playwright/examples/README.md)
+The [fullstack example](https://github.com/sddframework/sddfw/blob/main/examples/README.md)
 contains real frontend/API checks, an isolated fixture, and a deliberate failure
 exercise. Contributions can include clear scenarios, boundary cases, small
 reproducible examples, and honest reports of adapter/environment limits.
 
 For documentation-only or community-configuration changes, review links and
 rendered Markdown. There is no application build in the `.github` repository.
-Preview source links target `feat/v0.1-playwright` until it is merged; update
-those links together when the public installation branch changes.
+Documentation links target each repository's `main` branch so they survive the
+removal of contribution branches. Check relative paths and section links when
+updating documentation.
 
 Do not claim checks that you did not run. State relevant limits and distinguish
 local results from hosted or production evidence. Do not submit credentials or
@@ -110,5 +113,5 @@ copyright-assignment agreement.
 Follow the [code of conduct](CODE_OF_CONDUCT.md).
 [@alfoncode](https://github.com/alfoncode) is the founder, organization owner,
 and primary maintainer. See the framework's
-[governance document](https://github.com/sddframework/sddfw/blob/feat/v0.1-playwright/GOVERNANCE.md)
+[governance document](https://github.com/sddframework/sddfw/blob/main/GOVERNANCE.md)
 for project decisions.

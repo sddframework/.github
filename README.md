@@ -7,9 +7,9 @@ guidance, conduct rules, and issue and pull request templates for SDDFW.
   product ideas, and central discussions.
 - [website](https://github.com/sddframework/website): landing page source.
 
-The v0.1 preview is installed from its source branch, not the npm registry.
-See the [getting-started guide](https://github.com/sddframework/sddfw/blob/feat/v0.1-playwright/docs/getting-started.md)
-and [runnable examples](https://github.com/sddframework/sddfw/blob/feat/v0.1-playwright/examples/README.md).
+The v0.1 preview is installed from the framework's `main` branch; it has no npm registry release.
+See the [getting-started guide](https://github.com/sddframework/sddfw/blob/main/docs/getting-started.md)
+and [runnable examples](https://github.com/sddframework/sddfw/blob/main/examples/README.md).
 The website’s interactive report is illustrative; the CLI demo executes real
 local checks.
 

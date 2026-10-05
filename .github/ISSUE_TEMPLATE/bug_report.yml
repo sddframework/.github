@@ -31,4 +31,4 @@ body:
     id: evidence
     attributes:
       label: Relevant evidence
-      description: Add screenshots or redacted output. State which checks were actually run.
+      description: Add screenshots or redacted output. State which checks were actually run. For acceptance problems, include criterion IDs, report status, and declared mocks; inspect logs and traces before sharing.
