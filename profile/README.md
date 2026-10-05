@@ -1,5 +1,7 @@
 # SDDFW
 
+![SDDFW — Build with intent. Ship with evidence.](https://sddfw.com/assets/brand/sddfw-social-preview-dark.png)
+
 **Spec Driven Development Framework** — Build with intent. Ship with evidence.
 
 An open source project exploring a clear line from specifications to
