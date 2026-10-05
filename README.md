@@ -3,9 +3,18 @@
 This repository contains the public organization profile and shared contribution
 guidance, conduct rules, and issue and pull request templates for SDDFW.
 
-- [sddfw](https://github.com/sddframework/sddfw): framework collaboration,
+- [sddfw](https://github.com/sddframework/sddfw): the v0.1 CLI source preview, runnable frontend/API examples,
   product ideas, and central discussions.
 - [website](https://github.com/sddframework/website): landing page source.
+
+The v0.1 preview is installed from the framework's `main` branch; it has no npm registry release.
+See the [getting-started guide](https://github.com/sddframework/sddfw/blob/main/docs/getting-started.md)
+and [runnable examples](https://github.com/sddframework/sddfw/blob/main/examples/README.md).
+The website’s interactive report is illustrative; the CLI demo executes real
+local checks.
+
+[Contributing](CONTRIBUTING.md) explains specifications, regression evidence,
+framework checks, and community contributions.
 
 The primary maintainer is [@alfoncode](https://github.com/alfoncode).
 
