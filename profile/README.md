@@ -4,15 +4,20 @@
 
 **Spec Driven Development Framework** — Build with intent. Ship with evidence.
 
-An open source project exploring a clear line from specifications to
-AI-assisted implementation and reviewable evidence.
+An open source framework connecting reviewed specifications, AI-assisted test
+creation and implementation, Playwright checks, and reviewable acceptance evidence.
 
-The framework is in early development. There is no installable framework release
-yet; the landing page contains an illustrative interactive sample.
+The v0.1 source preview includes a local CLI and a runnable frontend + backend
+example. Install it from the
+[getting-started guide](https://github.com/sddframework/sddfw/blob/feat/v0.1-playwright/docs/getting-started.md);
+the package has not been published to the npm registry. The landing's interactive
+report is an illustrative sample, separate from executed CLI evidence.
 
 ## Join the community
 
 - [Framework and project direction](https://github.com/sddframework/sddfw)
+- [Runnable examples](https://github.com/sddframework/sddfw/blob/feat/v0.1-playwright/examples/README.md)
+- [Validation and current limits](https://github.com/sddframework/sddfw/blob/feat/v0.1-playwright/docs/validation.md)
 - [Questions and ideas](https://github.com/sddframework/sddfw/discussions)
 - [Landing page source](https://github.com/sddframework/website)
 - [How to contribute](https://github.com/sddframework/.github/blob/main/CONTRIBUTING.md)

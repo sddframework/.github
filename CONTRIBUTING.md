@@ -3,14 +3,15 @@
 Thanks for helping shape SDDFW. Questions, real workflow examples, documentation
 improvements, bug reports, and focused pull requests are welcome.
 
-The framework is in early development. There is no installable framework release
-yet. Keep documentation clear about what exists, what is illustrative, and what
-is proposed.
+The framework is in early development. The v0.1 source preview includes a local
+CLI, coding-agent workflow, Playwright UI/API acceptance checks, and a runnable
+fullstack example. It is not published to the npm registry. Keep executable
+features, the website’s illustrative report, and future adapters distinct.
 
 ## Where to contribute
 
-- [sddfw](https://github.com/sddframework/sddfw): framework documentation and
-  project direction. Use its [Discussions](https://github.com/sddframework/sddfw/discussions)
+- [sddfw](https://github.com/sddframework/sddfw): framework source, tests, specifications,
+  documentation, and runnable examples. Use its [Discussions](https://github.com/sddframework/sddfw/discussions)
   for questions, workflow examples, comparisons, and feature ideas.
 - [website](https://github.com/sddframework/website): the landing page. Report
   reproducible landing problems in that repository's issues.
@@ -32,9 +33,58 @@ For the website, Node.js 22 or later is required. Run `pnpm check` and
 `pnpm build`, then preview and inspect any changed behavior or layout. Follow
 the website README for local development.
 
-The framework and community repositories currently contain documentation and
-configuration. Review links and rendered Markdown; there are no framework build
-or runtime checks yet.
+## Framework changes and checks
+
+Use the [getting-started guide](https://github.com/sddframework/sddfw/blob/feat/v0.1-playwright/docs/getting-started.md)
+to install the preview and the [architecture guide](https://github.com/sddframework/sddfw/blob/feat/v0.1-playwright/docs/architecture.md)
+to understand its invariants. Requires Node.js 22 or later. From a framework
+checkout, run:
+
+```sh
+npm ci
+npm run check
+npm test
+npx playwright install chromium
+npm run test:demo
+npm run test:integration
+npm pack --dry-run
+```
+
+Run checks appropriate to the change and include their results in the pull
+request. CI on Ubuntu with Node.js 22 runs these gates, installing browser system
+dependencies as needed. A configured workflow is not evidence that it passed;
+wait for its actual result. Live local validation currently covers macOS.
+Windows adapter shims have unit coverage; a live Windows workflow is not yet
+verified.
+
+For behavior changes, explain the scenario and add a meaningful regression test.
+Preserve these acceptance invariants:
+
+- Specifications require explicit review and approval; agents cannot approve.
+- Tests are prepared and checked against a baseline before implementation.
+- Implementation keeps the accepted tests frozen, including automatic repairs.
+- Missing, skipped, expected-failure, flaky, or blocked checks cannot disappear
+  behind a passing acceptance summary.
+- Evidence identifies sources, configuration, environment, and declared mocks;
+  source or specification changes invalidate its freshness.
+- Initialization preserves existing project configuration, tests, and agent
+  instructions.
+
+Review AI-generated scenarios and assertions, not just test results. Demonstrate
+that a regression check detects the relevant broken behavior when that adds
+useful evidence. Do not relax a requirement or assertion to make a check pass.
+Record any deliberately changed behavior in its specification and explain the
+change in the pull request.
+
+The [fullstack example](https://github.com/sddframework/sddfw/blob/feat/v0.1-playwright/examples/README.md)
+contains real frontend/API checks, an isolated fixture, and a deliberate failure
+exercise. Contributions can include clear scenarios, boundary cases, small
+reproducible examples, and honest reports of adapter/environment limits.
+
+For documentation-only or community-configuration changes, review links and
+rendered Markdown. There is no application build in the `.github` repository.
+Preview source links target `feat/v0.1-playwright` until it is merged; update
+those links together when the public installation branch changes.
 
 Do not claim checks that you did not run. State relevant limits and distinguish
 local results from hosted or production evidence. Do not submit credentials or
