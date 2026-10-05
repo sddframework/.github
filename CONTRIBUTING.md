@@ -110,5 +110,5 @@ copyright-assignment agreement.
 Follow the [code of conduct](CODE_OF_CONDUCT.md).
 [@alfoncode](https://github.com/alfoncode) is the founder, organization owner,
 and primary maintainer. See the framework's
-[governance document](https://github.com/sddframework/sddfw/blob/main/GOVERNANCE.md)
+[governance document](https://github.com/sddframework/sddfw/blob/feat/v0.1-playwright/GOVERNANCE.md)
 for project decisions.

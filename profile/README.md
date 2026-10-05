@@ -20,7 +20,7 @@ report is an illustrative sample, separate from executed CLI evidence.
 - [Validation and current limits](https://github.com/sddframework/sddfw/blob/feat/v0.1-playwright/docs/validation.md)
 - [Questions and ideas](https://github.com/sddframework/sddfw/discussions)
 - [Landing page source](https://github.com/sddframework/website)
-- [How to contribute](https://github.com/sddframework/.github/blob/main/CONTRIBUTING.md)
+- [How to contribute](https://github.com/sddframework/.github/blob/docs/v0.1-workflow/CONTRIBUTING.md)
 
 Founded and maintained by [@alfoncode](https://github.com/alfoncode).
 Contributions from the community are welcome.
